@@ -1,0 +1,413 @@
+body {
+    background: linear-gradient(to bottom right, #0a5270, #47a8d1);
+    background-attachment: fixed;
+    /* Para que el fondo permanezca fijo mientras se desplaza */
+    margin: 20px;
+    padding: 0;
+    background-size: cover;
+    height: 95vh;
+    /* Asegura que la altura cubra toda la página */
+}
+
+
+.navbar {
+    background-color: #1b4d6e;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    /* Hace que el navbar sea ovalado */
+    border: 3px solid white;
+    /* Bordes blancos */
+}
+
+.navbar-links {
+    display: flex;
+    flex-grow: 1;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #1a3e53;
+}
+
+.c {
+    background-color: #1b4d6e;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    /* Hace el botón ovalado */
+    text-align: center;
+    /* Asegura que el texto esté centrado en una línea */
+    margin-left: auto;
+    /* Mueve el botón a la derecha */
+}
+
+.image-button img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.footer {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 92.6%;
+    text-align: right;
+    /* Alinea el texto a la derecha */
+    padding: 10px 50px;
+    height: 6.9vh;
+    /* Asegura que la altura cubra toda la página */
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    list-style: none;
+    background-color: 1a3e53;
+    padding: 20px;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: 1a3e53;
+}
+
+.navbar li {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar li:hover ul {
+    display: block;
+}
+
+.navbar ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: 1a3e53;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 14px 20px;
+    /* Ajustar padding para unificar con los otros enlaces */
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    /* Evita que el texto se envuelva */
+}
+
+.linea-izquierda {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 81vh;
+    /* 50% de la altura de la pantalla */
+    background-color: rgb(68, 214, 230);
+    margin: 20px;
+}
+
+.linea-abajo {
+    position: fixed;
+    left: 0;
+    /* Comienza en la izquierda */
+    bottom: 0;
+    /* Posicionarla en la parte inferior */
+    width: 80vw;
+    /* Ancho de 50% de la ventana */
+    height: 2.5px;
+    /* Ajusta el grosor de la línea */
+    background-color: white;
+    background-color: rgb(68, 214, 230);
+    margin: 20px;
+}
+
+.cubo-soft {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    /* Fondo blanco semi-transparente */
+    padding: 14px 0px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: white;
+    width: 15%;
+}
+
+/* Reduce el espacio entre label */
+.form-label {
+    color: white;
+    /* Cambia el color del texto a blanco */
+    margin-right: 15px;
+}
+
+.label-nav {
+    color: white;
+    /* Cambia el color del texto a blanco */
+}
+
+/* Reduce el espacio entre input */
+.form-control {
+    padding: 0.25rem 0.5rem;
+    /* Ajusta el espaciado si es necesario */
+    background-color: transparent;
+    /* Elimina el fondo */
+    border: 1px solid #000000;
+}
+
+.form-select {
+    background-color: transparent !important;
+    /* Elimina el fondo */
+    border: 1px solid #000000;
+    color: white;
+}
+
+h5 {
+    display: inline-block;
+    /* Para que el pseudo-elemento se aplique solo al texto */
+    position: relative;
+    color: hsl(218, 88%, 65%);
+}
+
+h5::after {
+    content: '';
+    /* Necesario para que el pseudo-elemento se muestre */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* La línea será del mismo ancho que el texto */
+    border-bottom: 2px solid hsl(218, 88%, 65%);
+    /* La línea debajo del texto */
+}
+
+.highlight {
+    color: rgb(205, 43, 226);
+}
+
+.custom-border {
+    border: 1px solid white;
+    /* Borde blanco de 2px */
+    color: white;
+    /* Texto blanco */
+    background-color: transparent;
+    /* Fondo transparente */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-right: -90px;
+    margin-bottom: 15px;
+}
+
+.image-button2 {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.button-image {
+    display: block;
+    width: 100px;
+    height: auto;
+    position: relative;
+    left: 60px;
+}
+
+.button-image2 {
+    display: block;
+    width: 100px;
+    height: auto;
+    position: relative;
+    left: 1px;
+}
+
+/* Elimina el fondo blanco del menú desplegable */
+.dropdown-menu {
+    background-color: transparent !important;
+    border: none;
+    /* Opcional: quita el borde */
+}
+
+/* Cambia el color de fondo de los elementos cuando pasas el cursor */
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Ajusta el color de fondo al pasar el cursor */
+}
+
+.transparent-select {
+    background-color: transparent !important;
+    /* Fondo transparente */
+    color: #fff !important;
+    /* Texto blanco */
+    border: 1px solid #000000 !important;
+    /* Borde blanco */
+}
+
+.transparent-select option {
+    background-color: #1b4d6e;
+    /* Opciones con fondo oscuro y transparente */
+    color: #fff;
+    /* Texto blanco */
+}
+
+/* Estilos adicionales para centrar el contenido */
+.container-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.table-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos para los botones transparentes */
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btn-transparent:hover {
+    color: #0056b3;
+    /* Color más oscuro en hover */
+}
+
+/* Fondo gris */
+.bg-gray {
+    background-color: #b2aeae;
+}
+
+.btn-guardar {
+    background-color: transparent;
+    /* Fondo transparente */
+    border: none;
+    /* Sin bordes */
+    padding: 0;
+    /* Sin padding extra */
+    cursor: pointer;
+    /* Cambia el cursor a pointer al pasar sobre el botón */
+}
+
+.icono-boton {
+    width: 80px;
+    /* Ajusta el tamaño de la imagen según necesites */
+    height: 80px;
+    /* Ajusta el tamaño de la imagen según necesites */
+    display: block;
+}
+
+.btn-guardar:hover .icono-boton {
+    opacity: 0.8;
+    /* Efecto al pasar el mouse */
+}
+input.form-control1 {
+    border: none;
+    box-shadow: none;
+}
+.exclusion-label {
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    text-overflow: ellipsis; /* Agrega los puntos suspensivos (...) */
+    max-width: 200px; /* Limita el ancho máximo del texto. Ajusta este valor según lo necesites */
+    display: inline-block; /* Hace que el contenedor del texto se comporte como un bloque en línea */
+    color:  #fff;
+  }
+  
+  .custom-card {
+    width: 35rem;
+    background-color: transparent; /* Fondo blanco semitransparente */
+    border: 2px solid #000000; /* Borde azul */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 30px; /* Bordes redondeados */
+  }
+ 
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .form-check-label {
+    font-size: 1rem;
+  }
+  
+  .form-control {
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  .custom-input::placeholder {
+    color: white; /* Cambia el color del texto del placeholder a blanco */
+    opacity: 1;   /* Asegura que sea completamente visible */
+  }
+  
+  .custom-input {
+    background-color: transparent; /* Fondo transparente para que el input combine con el diseño */
+    color: white; /* Color del texto ingresado */
+    border-radius: 5px;
+  }
+
+.button-image3 {
+    display: block;
+    width: 60px;
+    height: auto;
+    position: relative;
+    left: 30px;
+}
+  
